@@ -1,9 +1,10 @@
 <template>
-  <Main/>
+	<Main/>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage'
+	name: 'IndexPage',
+	loading: true,
 }
 </script>

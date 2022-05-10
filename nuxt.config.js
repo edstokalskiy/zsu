@@ -24,14 +24,20 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/sass/normalize',
+    '~/assets/sass/styles',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: {
+    dirs: [
+      '~/components',
+      '~/components/partials',
+    ]
+  },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -39,9 +45,28 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/style-resources',
   ],
+
+  styleResources: {
+      sass: [
+        '~/assets/sass/variables.sass',
+      ]
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  styleResources: {
+    sass: [
+      '~/assets/sass/variables.sass',
+    ]
+  },
+
+  loading: {
+    name: 'pulse',
+    color: '#1b60a5',
+    background: 'white'
   }
 }

@@ -1,10 +1,17 @@
-<!-- Please remove this file from your project -->
 <template>
-  <div>test</div>
+	<div>
+		<div class="wrapper">
+			Main
+		</div>
+	</div>
 </template>
 
 <script>
-export default {
-  name: 'Main'
-}
+	export default {
+		name: 'Main'
+	}
 </script>
+
+<style lang="sass">
+
+</style>
