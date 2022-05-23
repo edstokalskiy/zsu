@@ -1,9 +1,11 @@
 <template>
     <div class="layout">
-        <Header/>
+        <!-- <Header/> -->
         <main id="main">
             <Nuxt />
         </main>
         <Footer />
+
+        <notifications position="top center"/>
     </div>
 </template>

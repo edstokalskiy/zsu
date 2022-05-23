@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap')
 
 .layout
     display: flex
@@ -11,7 +11,8 @@
 body
     color: $black
     background: $white
-    font-family: 'Ubuntu', sans-serif
+    font-family: 'Manrope', sans-serif
+    font-size: 14px
 header
     background: #ffb4b4
 footer
@@ -33,3 +34,97 @@ footer
 .notification-title
     font-weight: bold
     font-family: Arial, Helvetica, sans-serif
+section
+    margin: 120px 0
+.btns
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 24px
+.btn
+    font-weight: 600
+    font-size: 14px
+    line-height: 22px
+    padding: 17px 24px
+    border-radius: 32px
+    background: $green
+    border: 1px solid transparent
+    color: $white
+    transition: all .3s ease-in-out
+    cursor: pointer
+    &:hover
+        background: $greenHover
+    &.transprent
+        background: transparent
+        border-color: $white
+        transition: all .3s ease-in-out
+        &:hover
+            background: $whiteHover
+.langs
+    display: flex
+    align-items: center
+    justify-content: center
+    background: rgba(255, 255, 255, 0.48)
+    border-radius: 24px
+    height: 40px
+    a
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 40px
+        padding: 0 24px
+        font-weight: 600
+        font-size: 14px
+        line-height: 22px
+        color: $black
+        border-radius: 24px
+        cursor: pointer
+        transition: all .3s ease-in-out
+        &:hover:not(.active)
+            background: rgba(255, 255, 255, 0.6)
+            transition: all .3s ease-in-out
+        &.active
+            background: $white
+footer
+    background: $black
+    padding: 24px
+    color: $white
+    text-align: center
+    p
+        max-width: 588px
+        font-weight: 600
+        font-size: 14px
+        line-height: 22px
+        margin: 0 auto
+h3
+    font-weight: 600
+    font-size: 48px
+    line-height: 56px
+    text-align: center
+.line
+    width: 80px
+    height: 2px
+    background: $green 
+    margin: 24px 0
+.contact
+    .line
+        margin: 24px auto 64px auto 
+.vue-notification
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    color: $white
+    padding: 15px 20px !important
+    border-radius: 16px
+    &.success
+        background: $green !important
+        border-left-color: $green !important
+        border: 1px solid $white !important
+    &.warn
+        background: $beige !important
+        border-left-color: $beige !important
+        border: 1px solid $white !important
+
+    
+
+

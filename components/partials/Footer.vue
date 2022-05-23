@@ -1,7 +1,7 @@
 <template>
     <footer>
         <div class="wrapper">
-            footer
+            <p>{{ $t('footer.text')}}</p>
         </div>
     </footer>
 </template>
@@ -12,7 +12,3 @@ export default {
     methods: {},
 }
 </script>
-
-<style lang="sass">
-
-</style>
